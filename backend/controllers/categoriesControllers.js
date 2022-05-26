@@ -21,3 +21,23 @@ const createCategory = async (req, res, next) => {
     if (conexion) conexion.release();
   }
 };
+const editCategory = async (req, res, next) => {
+  const conexion = await getConnection();
+  try {
+    const { categoryID } = req.info;
+    const { name } = req.body;
+    await conexion.query(` update categories set name = ? where id = ?`, [
+      name,
+      categoryID,
+    ]);
+    res.send({ message: `Categoria ${categoryID} ahora es ${name}` });
+  } catch (error) {
+    next(error);
+  } finally {
+    if (conexion) conexion.release();
+  }
+};
+module.exports = {
+  createCategory,
+  editCategory,
+};
