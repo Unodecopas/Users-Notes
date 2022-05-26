@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+.app-header {
+  padding: 0 2rem;
+  background-color: var(--dark);
+  border-bottom: 2px inset #eee;
+  min-height: 10vh;
+  display: flex;
+  place-items: center;
+  justify-content: space-between;
+}
+.app-header h1 {
+  font-family: "Style Script", cursive;
+  font-size: 3rem;
+  text-shadow: 1px 1px 5px grey;
+  color: var(--ligth);
+}
