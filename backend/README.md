@@ -37,11 +37,3 @@
 - Iniciar servidor:
 
         npm run dev
-
-- Swagger:
-
-        http://localhost:4000/api-docs
-
-## ENDPOINTS
-
-<img src="./images/swagger-list.png" alt="preview">
