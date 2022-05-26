@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
 .app-header {
   padding: 0 2rem;
-  background-color: var(--dark);
+  background-color: var(--background);
   box-shadow: 0px 0px 5px grey;
   min-height: 10vh;
   display: flex;
@@ -13,20 +13,5 @@
   font-family: "Style Script", cursive;
   font-size: 3rem;
   text-shadow: 1px 1px 5px grey;
-  color: var(--ligth);
-}
-button {
-  background: transparent;
-  padding: 0.5rem 0.75rem;
-  border: 2px solid var(--green);
-  border-radius: 1rem;
-  color: var(--green);
-  cursor: pointer;
-}
-button:hover {
-  background-color: var(--green);
-  color: var(--dark);
-}
-button:active {
-  transform: translateY(2px);
+  color: var(--text);
 }

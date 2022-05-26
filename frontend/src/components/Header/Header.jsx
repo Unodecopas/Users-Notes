@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import LoginButton from "../buttons/LoginButton";
 
 const Header = () => {
   return (
@@ -9,8 +10,8 @@ const Header = () => {
         <h1>Notes</h1>
       </Link>
       <div className="user-info">
-        <Link to="login">
-          <button>Login</button>
+        <Link to="auth">
+          <LoginButton text="Login" />
         </Link>
       </div>
     </div>

@@ -1,0 +1,15 @@
+.btn-login {
+  background: transparent;
+  padding: 0.5rem 0.75rem;
+  border: 2px solid var(--primary);
+  border-radius: 1rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+.btn-login:hover {
+  background-color: var(--primary);
+  color: var(--background);
+}
+.btn-login:active {
+  transform: translateY(2px);
+}

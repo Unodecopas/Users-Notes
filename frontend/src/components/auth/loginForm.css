@@ -1,0 +1,33 @@
+.login-form {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 5rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 12px inset var(--primary);
+}
+.login-form input {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background-color: var(--secondary);
+  border: none;
+  text-align: center;
+  color: var(--ligth);
+}
+.login-form input:focus {
+  outline: 2px solid var(--primary);
+  -webkit-text-fill-color: var(--text);
+  transition: background-color 5000s ease-in-out 0s;
+}
+.login-form input:active {
+  background-color: var(--secondary) !important;
+}
+.login-form input:-webkit-autofill,
+.login-form input:-webkit-autofill:hover,
+.login-form input:-webkit-autofill:focus,
+.login-form input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--text);
+  transition: background-color 5000s ease-in-out 0s;
+  background-color: var(--secondary) !important;
+}
