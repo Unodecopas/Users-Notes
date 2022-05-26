@@ -37,7 +37,20 @@ const editCategory = async (req, res, next) => {
     if (conexion) conexion.release();
   }
 };
+const deleteCategory = async (req, res, next) => {
+  const conexion = await getConnection();
+  try {
+    const { categoryID } = req.info;
+    await conexion.query(` delete from categories where id = ?`, [categoryID]);
+    res.send({ message: `categoria ${categoryID} borrada correctamente` });
+  } catch (error) {
+    next(error);
+  } finally {
+    if (conexion) conexion.release();
+  }
+};
 module.exports = {
   createCategory,
   editCategory,
+  deleteCategory,
 };
